@@ -54,11 +54,11 @@ const ProductDetail = () => {
     const discountPercent = Math.round(((mrp - basePrice) / mrp) * 100);
 
     return (
-        <div className="h-screen w-full bg-[#fcfcfc] overflow-hidden flex flex-col">
+        <div className="min-h-screen w-full bg-[#fcfcfc] flex flex-col">
             <Navbar />
 
-            <div className="flex-1 max-w-7xl mx-auto w-full px-6 flex items-center justify-center pt-10 pb-10">
-                <div className="flex flex-col lg:flex-row gap-12 items-start h-full w-full overflow-hidden">
+            <div className="flex-1 max-w-7xl mx-auto w-full px-6 flex items-start justify-center pt-24 pb-16">
+                <div className="flex flex-col lg:flex-row gap-12 items-start w-full">
 
                     {/* Left Column - Product Visualization */}
                     <div className="w-full lg:w-[480px] h-full flex flex-col gap-6 shrink-0">
