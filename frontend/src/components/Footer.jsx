@@ -1,94 +1,54 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Logo from './Logo';
 
 const Footer = () => {
     const navigate = useNavigate();
 
     return (
-        <footer className="bg-[#132130] text-gray-400 py-20 px-6">
-            <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-16">
+        <footer className="bg-[#0A0618] py-24 px-6 mt-20 text-white w-full border-t border-white/5 shadow-[0_-20px_40px_rgba(0,0,0,0.05)] relative z-10 w-full mb-0">
+            <div className="max-w-6xl mx-auto flex flex-col items-center gap-16">
 
-                    {/* Premium Brand Info */}
-                    <div className="col-span-2 space-y-8">
-                        <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-[#00AEEF] text-white rounded-lg flex items-center justify-center font-black text-lg">
-                                1
-                            </div>
-                            <span className="text-2xl font-black text-white tracking-tighter">1Fi</span>
+                {/* Brand & Mission & Links */}
+                <div className="w-full flex justify-between items-start">
+                    <div className="flex flex-col max-w-sm">
+                        <div className="mb-6">
+                            <Logo />
                         </div>
-                        <p className="text-sm leading-relaxed max-w-sm font-medium">
-                            1Fi is an institutional grade hardware financing protocol. We enable users to leverage their diversified mutual fund portfolios to secure the world's most advanced technology at 0% interest.
+                        <p className="text-[12px] text-gray-400 leading-relaxed font-medium">
+                            1Fi is an institutional grade hardware financing protocol. Leverage your diversified portfolio to secure advanced technology at exactly 0% interest.
                         </p>
-                        <div className="flex gap-4">
-                            {['Twitter', 'LinkedIn', 'Github'].map((social) => (
-                                <button key={social} className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#00AEEF] hover:text-white transition-all">
-                                    <span className="sr-only">{social}</span>
-                                    <div className="w-4 h-4 rounded-full bg-current opacity-30 group-hover:opacity-100 transition-opacity" />
-                                </button>
-                            ))}
+                    </div>
+
+                    <div className="flex flex-col items-end gap-6 pt-2">
+                        <div className="flex gap-6">
+                            <button
+                                onClick={() => navigate('/')}
+                                className="text-[10px] font-black uppercase tracking-[0.15em] text-[#bca1fa] hover:text-white transition-colors"
+                            >
+                                Documentation
+                            </button>
+                            <button
+                                onClick={() => navigate('/')}
+                                className="text-[10px] font-black uppercase tracking-[0.15em] text-gray-400 hover:text-white transition-colors"
+                            >
+                                Support
+                            </button>
+                        </div>
+                        <div className="flex items-center gap-3 px-5 py-2.5 bg-white/5 rounded-full border border-white/10 shadow-sm backdrop-blur-sm">
+                            <div className="w-1.5 h-1.5 bg-[#00e676] rounded-full shadow-[0_0_8px_rgba(0,230,118,0.6)]"></div>
+                            <span className="text-[9px] font-black uppercase tracking-[0.15em] text-gray-300">All Protocols Active</span>
                         </div>
                     </div>
-
-                    {/* Navigation Columns */}
-                    <div>
-                        <h4 className="text-[10px] font-black text-white uppercase tracking-[0.2em] mb-8">Asset Classes</h4>
-                        <ul className="space-y-4">
-                            {['Smartphones', 'Laptops', 'Wearables', 'Audio'].map((item) => (
-                                <li key={item}>
-                                    <button
-                                        onClick={() => navigate('/')}
-                                        className="text-sm font-semibold hover:text-[#00AEEF] transition-colors"
-                                    >
-                                        {item}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 className="text-[10px] font-black text-white uppercase tracking-[0.2em] mb-8">Protocol</h4>
-                        <ul className="space-y-4">
-                            {['How it Works', 'Underwriting', 'Risk Scoring', 'Governance'].map((item) => (
-                                <li key={item}>
-                                    <button
-                                        onClick={() => navigate('/support')}
-                                        className="text-sm font-semibold hover:text-[#00AEEF] transition-colors"
-                                    >
-                                        {item}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 className="text-[10px] font-black text-white uppercase tracking-[0.2em] mb-8">Verification</h4>
-                        <ul className="space-y-4">
-                            {['Bank Grade Security', 'API Integration', 'Portfolio Analysis'].map((item) => (
-                                <li key={item}>
-                                    <button className="text-sm font-semibold hover:text-[#00AEEF] transition-colors cursor-not-allowed text-left">
-                                        {item}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
                 </div>
 
-                <div className="mt-24 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p className="text-[10px] font-black uppercase tracking-widest text-gray-500">
-                        Institutional Technology Underwriting Protocol © 2026. All Rights Reserved.
-                    </p>
-                    <div className="flex gap-8">
-                        {['Privacy', 'Compliance', 'Node Status'].map((item) => (
-                            <button key={item} className="text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-white transition-colors">
-                                {item}
-                            </button>
-                        ))}
-                    </div>
-                </div>
+            </div>
+
+            {/* Copyright */}
+            <div className="max-w-6xl mx-auto mt-20 flex flex-col items-center justify-center pt-8 border-t border-white/5 w-full">
+                <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-gray-600">
+                    © 2026 1Fi Institutional Protocol. All Rights Reserved.
+                </p>
             </div>
         </footer>
     );

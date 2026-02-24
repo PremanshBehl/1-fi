@@ -3,8 +3,8 @@
 @reference "tailwindcss";
 
 :root {
-    --primary: #00AEEF;
-    --primary-dark: #008cc0;
+    --primary: #6B38FB;
+    --primary-dark: #4F23C0;
     --teal-highlight: #0d9488;
     --bg-main: #ffffff;
     --bg-soft: #f8fafc;

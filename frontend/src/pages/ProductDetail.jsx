@@ -37,7 +37,7 @@ const ProductDetail = () => {
     if (loading) return (
         <div className="flex items-center justify-center min-h-screen bg-white">
             <div className="animate-pulse flex flex-col items-center gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-full"></div>
+                <div className="w-12 h-12 bg-purple-100 rounded-full"></div>
                 <span className="font-bold text-gray-400 uppercase tracking-widest text-[10px]">Verifying Underwriting</span>
             </div>
         </div>
@@ -64,7 +64,7 @@ const ProductDetail = () => {
                     <div className="w-full lg:w-[480px] h-full flex flex-col gap-6 shrink-0">
                         <div className="flex-1 bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm flex flex-col items-center group relative overflow-hidden min-h-0">
                             <div className="absolute top-6 left-6 flex flex-col gap-2 z-10">
-                                <span className="bg-[#00AEEF] text-white text-[9px] font-black px-2.5 py-1.5 rounded-full uppercase tracking-widest shadow-lg shadow-blue-500/20">Available</span>
+                                <span className="bg-[#6B38FB] text-white text-[9px] font-black px-2.5 py-1.5 rounded-full uppercase tracking-widest shadow-lg shadow-purple-500/20">Available</span>
                                 {discountPercent > 0 && (
                                     <span className="bg-teal-500 text-white text-[9px] font-black px-2.5 py-1.5 rounded-full uppercase tracking-widest shadow-lg shadow-teal-500/20">-{discountPercent}% OFF</span>
                                 )}
@@ -81,7 +81,7 @@ const ProductDetail = () => {
                             <div className="w-full pt-6 border-t border-gray-50">
                                 <div className="flex justify-between items-end">
                                     <div className="space-y-1">
-                                        <p className="text-[#00AEEF] font-black uppercase tracking-[0.2em] text-[9px]">Finish</p>
+                                        <p className="text-[#6B38FB] font-black uppercase tracking-[0.2em] text-[9px]">Finish</p>
                                         <h3 className="text-lg font-black text-gray-900 leading-none">{selectedVariant?.color || 'Standard'}</h3>
                                     </div>
                                     <div className="flex gap-2.5">
@@ -89,7 +89,7 @@ const ProductDetail = () => {
                                             <button
                                                 key={v.id}
                                                 onClick={() => setSelectedVariant(v)}
-                                                className={`group relative flex items-center justify-center w-8 h-8 rounded-full border-2 transition-all duration-300 ${selectedVariant?.id === v.id ? 'border-[#00AEEF] scale-110' : 'border-gray-100 hover:border-gray-200'}`}
+                                                className={`group relative flex items-center justify-center w-8 h-8 rounded-full border-2 transition-all duration-300 ${selectedVariant?.id === v.id ? 'border-[#6B38FB] scale-110' : 'border-gray-100 hover:border-gray-200'}`}
                                             >
                                                 <div
                                                     className="w-5.5 h-5.5 rounded-full shadow-inner"
@@ -103,8 +103,8 @@ const ProductDetail = () => {
                         </div>
 
                         {/* Strategic Content */}
-                        <div className="bg-blue-50/50 rounded-[32px] p-6 border border-blue-100/50 shrink-0">
-                            <h4 className="text-[10px] font-black text-[#00AEEF] uppercase tracking-[0.2em] mb-2">Protocol Insight</h4>
+                        <div className="bg-purple-50/50 rounded-[32px] p-6 border border-purple-100/50 shrink-0">
+                            <h4 className="text-[10px] font-black text-[#6B38FB] uppercase tracking-[0.2em] mb-2">Protocol Insight</h4>
                             <p className="text-gray-500 text-xs font-medium leading-relaxed">
                                 Our institutional protocol partners with manufacturers and AMCs to subsidize interest using portfolio yields.
                             </p>
@@ -115,8 +115,8 @@ const ProductDetail = () => {
                     <div className="flex-1 h-full flex flex-col min-w-0">
                         <div className="mb-6 shrink-0">
                             <div className="flex items-center gap-2 mb-3">
-                                <span className="w-6 h-[2px] bg-[#00AEEF]"></span>
-                                <span className="text-[#00AEEF] font-black uppercase tracking-[0.3em] text-[10px]">Asset Underwriting</span>
+                                <span className="w-6 h-[2px] bg-[#6B38FB]"></span>
+                                <span className="text-[#6B38FB] font-black uppercase tracking-[0.3em] text-[10px]">Asset Underwriting</span>
                             </div>
                             <h1 className="text-4xl font-black text-gray-900 tracking-tighter leading-tight mb-2">{product.name}</h1>
                             <div className="flex items-center gap-3">
@@ -204,12 +204,12 @@ const ProductDetail = () => {
                                 </div>
                                 <div className="text-right space-y-0.5">
                                     <p className="text-gray-400 text-[9px] font-black uppercase tracking-widest">Downpayment</p>
-                                    <p className="text-xl font-black text-[#00AEEF]">₹0.00</p>
+                                    <p className="text-xl font-black text-[#6B38FB]">₹0.00</p>
                                 </div>
                             </div>
                             <button
                                 onClick={() => navigate('/checkout')}
-                                className="w-full bg-[#00AEEF] text-white py-4.5 rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] hover:bg-[#008cc0] hover:scale-[1.01] active:scale-95 transition-all shadow-xl shadow-blue-500/20"
+                                className="w-full bg-[#6B38FB] text-white py-4.5 rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] hover:bg-[#4F23C0] hover:scale-[1.01] active:scale-95 transition-all shadow-xl shadow-purple-500/20"
                             >
                                 Initiate Underwriting
                             </button>

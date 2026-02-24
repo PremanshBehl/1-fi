@@ -20,13 +20,13 @@ const CategoryBar = ({ activeCategory, setActiveCategory }) => {
                         key={cat}
                         onClick={() => setActiveCategory(cat)}
                         className={`text-[13px] font-semibold transition-all cursor-pointer whitespace-nowrap relative py-1 ${activeCategory === cat
-                            ? 'text-[#00AEEF] font-bold'
+                            ? 'text-[#6B38FB] font-bold'
                             : 'text-gray-500 hover:text-gray-900'
                             }`}
                     >
                         {cat}
                         {activeCategory === cat && (
-                            <div className="absolute -bottom-4 left-0 right-0 h-0.5 bg-[#00AEEF]"></div>
+                            <div className="absolute -bottom-4 left-0 right-0 h-0.5 bg-[#6B38FB]"></div>
                         )}
                     </button>
                 ))}

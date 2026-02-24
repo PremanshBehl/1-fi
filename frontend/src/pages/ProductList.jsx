@@ -60,7 +60,7 @@ const ProductList = () => {
         return (
             <div className="flex items-center justify-center min-h-screen bg-white text-sm">
                 <div className="animate-pulse flex flex-col items-center gap-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-full"></div>
+                    <div className="w-12 h-12 bg-purple-100 rounded-full"></div>
                     <span className="font-bold text-gray-400 uppercase tracking-widest text-[10px]">Loading 1Fi Hub</span>
                 </div>
             </div>
@@ -83,10 +83,10 @@ const ProductList = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-[#132130] via-[#132130]/80 to-transparent"></div>
                     <div className="relative max-w-7xl mx-auto px-6 h-full flex flex-col justify-center gap-10">
                         <div className="space-y-6 reveal" ref={addToRefs}>
-                            <span className="text-[#00AEEF] font-black uppercase tracking-[0.4em] text-[11px] bg-blue-500/10 px-3 py-1 rounded w-fit backdrop-blur-sm border border-blue-500/20">Institutional Grade Financing</span>
+                            <span className="text-[#6B38FB] font-black uppercase tracking-[0.4em] text-[11px] bg-purple-500/10 px-3 py-1 rounded w-fit backdrop-blur-sm border border-purple-500/20">Institutional Grade Financing</span>
                             <h1 className="text-7xl font-black text-white leading-[0.9] tracking-tighter max-w-3xl">
                                 The Future of <br />
-                                <span className="text-[#00AEEF]">Hardware Assets.</span>
+                                <span className="text-[#6B38FB]">Hardware Assets.</span>
                             </h1>
                             <p className="text-gray-300 text-xl max-w-xl font-medium leading-relaxed">
                                 Own premium technology with zero-interest institutional financing backed by your diversified mutual fund holdings.
@@ -94,11 +94,10 @@ const ProductList = () => {
                             <div className="flex flex-wrap gap-6 items-center pt-4">
                                 <button
                                     onClick={scrollToCatalogue}
-                                    className="bg-[#00AEEF] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all duration-300 shadow-xl shadow-blue-500/20 active:scale-95"
+                                    className="bg-[#6B38FB] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest text-xs hover:bg-[#4F23C0] transition-all duration-300 shadow-xl shadow-purple-500/20 active:scale-95"
                                 >
                                     Explore Catalogue
                                 </button>
-                                <button className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-black uppercase tracking-widest text-xs hover:bg-white/20 transition-all duration-300 active:scale-95">Learn More</button>
                             </div>
                         </div>
 
@@ -110,7 +109,7 @@ const ProductList = () => {
                                 { label: 'Mutual Fund', sub: 'Backed Security', icon: Landmark }
                             ].map((badge, idx) => (
                                 <div key={badge.label} className="flex items-center gap-4 group">
-                                    <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-[#00AEEF] group-hover:bg-[#00AEEF] group-hover:text-white transition-all duration-300">
+                                    <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-[#6B38FB] group-hover:bg-[#6B38FB] group-hover:text-white transition-all duration-300">
                                         <badge.icon className="w-5 h-5" />
                                     </div>
                                     <div className="flex flex-col">
@@ -163,7 +162,7 @@ const ProductList = () => {
                                 </div>
                                 <button
                                     onClick={() => setActiveCategory('Mobiles')}
-                                    className="bg-[#00AEEF] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest text-xs hover:bg-[#008cc0] transition-all shadow-xl shadow-blue-500/20 active:scale-95"
+                                    className="bg-[#6B38FB] text-white px-10 py-5 rounded-full font-black uppercase tracking-widest text-xs hover:bg-[#4F23C0] transition-all shadow-xl shadow-purple-500/20 active:scale-95"
                                 >
                                     Explore Active Terminals
                                 </button>
@@ -178,10 +177,10 @@ const ProductList = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                             <div className="space-y-8">
                                 <div className="space-y-4">
-                                    <span className="text-[#00AEEF] font-black uppercase tracking-[0.3em] text-[10px]">Underwriting Protocol</span>
+                                    <span className="text-[#6B38FB] font-black uppercase tracking-[0.3em] text-[10px]">Underwriting Protocol</span>
                                     <h2 className="text-5xl font-black text-gray-900 tracking-tighter leading-[1.1]">
                                         How 0% EMI <br />
-                                        <span className="text-[#00AEEF]">Is Possible.</span>
+                                        <span className="text-[#6B38FB]">Is Possible.</span>
                                     </h2>
                                 </div>
                                 <p className="text-gray-500 text-lg font-medium leading-relaxed">
@@ -194,7 +193,7 @@ const ProductList = () => {
                                         { title: 'Market-Linked Security', desc: 'Our protocol monitors portfolio health in real-time, maintaining a secure LTV ratio.', icon: ShieldCheck }
                                     ].map((item) => (
                                         <div key={item.title} className="flex gap-5">
-                                            <div className="w-12 h-12 shrink-0 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-[#00AEEF] shadow-sm">
+                                            <div className="w-12 h-12 shrink-0 rounded-2xl bg-white border border-gray-200 flex items-center justify-center text-[#6B38FB] shadow-sm">
                                                 <item.icon className="w-6 h-6" />
                                             </div>
                                             <div>
@@ -206,15 +205,15 @@ const ProductList = () => {
                                 </div>
                             </div>
                             <div className="relative">
-                                <div className="absolute -inset-4 bg-[#00AEEF]/5 blur-3xl rounded-full"></div>
-                                <div className="relative bg-white rounded-[40px] p-12 border border-blue-100 shadow-2xl">
+                                <div className="absolute -inset-4 bg-[#6B38FB]/5 blur-3xl rounded-full"></div>
+                                <div className="relative bg-white rounded-[40px] p-12 border border-purple-100 shadow-2xl">
                                     <div className="flex flex-col gap-8">
                                         <div className="flex items-center justify-between border-b border-gray-50 pb-8">
                                             <div>
                                                 <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-1">Guaranteed By</p>
                                                 <p className="text-xl font-black text-gray-900">Institutional Protocol</p>
                                             </div>
-                                            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-[#00AEEF] animate-pulse-subtle">
+                                            <div className="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center text-[#6B38FB] animate-pulse-subtle">
                                                 <ShieldCheck className="w-10 h-10" />
                                             </div>
                                         </div>
@@ -233,7 +232,7 @@ const ProductList = () => {
                                                 <Lock className="w-3 h-3" /> Secure Underwriting active
                                             </p>
                                             <div className="h-2 w-full bg-gray-200 rounded-full overflow-hidden">
-                                                <div className="h-full w-3/4 bg-[#00AEEF] rounded-full"></div>
+                                                <div className="h-full w-3/4 bg-[#6B38FB] rounded-full"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -247,7 +246,7 @@ const ProductList = () => {
                 <section className="bg-white py-32 border-b border-gray-100 reveal" ref={addToRefs}>
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-20 space-y-4">
-                            <span className="text-[#00AEEF] font-black uppercase tracking-[0.3em] text-[10px]">Strategic Flow</span>
+                            <span className="text-[#6B38FB] font-black uppercase tracking-[0.3em] text-[10px]">Strategic Flow</span>
                             <h2 className="text-5xl font-black text-gray-900 tracking-tighter">The Protocol Workflow</h2>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -258,8 +257,8 @@ const ProductList = () => {
                                 { step: '04', title: 'Instant Delivery', desc: 'Take possession of your assets while your wealth continues to compound.' }
                             ].map((s) => (
                                 <div key={s.step} className="space-y-4 group">
-                                    <span className="text-5xl font-black text-gray-100 group-hover:text-blue-50 transition-colors duration-300">{s.step}</span>
-                                    <h4 className="text-xl font-black text-gray-900 group-hover:text-[#00AEEF] transition-colors duration-300">{s.title}</h4>
+                                    <span className="text-5xl font-black text-gray-100 group-hover:text-purple-50 transition-colors duration-300">{s.step}</span>
+                                    <h4 className="text-xl font-black text-gray-900 group-hover:text-[#6B38FB] transition-colors duration-300">{s.title}</h4>
                                     <p className="text-gray-500 font-medium leading-relaxed">{s.desc}</p>
                                 </div>
                             ))}
@@ -271,10 +270,10 @@ const ProductList = () => {
                 <section className="py-32 bg-white reveal" ref={addToRefs}>
                     <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                         <div>
-                            <span className="text-[#00AEEF] font-black uppercase tracking-[0.3em] text-[10px]">Security Framework</span>
+                            <span className="text-[#6B38FB] font-black uppercase tracking-[0.3em] text-[10px]">Security Framework</span>
                             <h2 className="text-5xl font-black text-gray-900 tracking-tighter mt-4 leading-tight">
                                 Bank Grade <br />
-                                <span className="text-[#00AEEF]">API Verification.</span>
+                                <span className="text-[#6B38FB]">API Verification.</span>
                             </h2>
                             <p className="text-gray-500 text-lg font-medium mt-8 leading-relaxed">
                                 Our platform integrates directly with major depositories (CDSL/NSDL) and AMCs via secure API protocols. Your data is encrypted using military-grade AES-256 standards.
@@ -282,23 +281,23 @@ const ProductList = () => {
                             <div className="grid grid-cols-2 gap-8 mt-12">
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-2 text-gray-900">
-                                        <Zap className="w-4 h-4 text-[#00AEEF]" />
+                                        <Zap className="w-4 h-4 text-[#6B38FB]" />
                                         <h5 className="font-black uppercase text-[11px] tracking-widest">Real-time Pulse</h5>
                                     </div>
                                     <p className="text-gray-500 text-xs font-medium leading-relaxed">Market-linked monitoring ensures baseline portfolio health hourly.</p>
                                 </div>
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-2 text-gray-900">
-                                        <Lock className="w-4 h-4 text-[#00AEEF]" />
+                                        <Lock className="w-4 h-4 text-[#6B38FB]" />
                                         <h5 className="font-black uppercase text-[11px] tracking-widest">End-to-End Encryption</h5>
                                     </div>
                                     <p className="text-gray-500 text-xs font-medium leading-relaxed">Zero-knowledge data transfer protocols for maximum user privacy.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-gray-50 rounded-[40px] p-10 border border-blue-100 flex items-center justify-center relative overflow-hidden">
+                        <div className="bg-gray-50 rounded-[40px] p-10 border border-purple-100 flex items-center justify-center relative overflow-hidden">
                             <div className="absolute top-0 right-0 p-6">
-                                <Shield className="w-24 h-24 text-blue-500/5 rotate-12" />
+                                <Shield className="w-24 h-24 text-purple-500/5 rotate-12" />
                             </div>
                             <div className="w-full max-w-sm space-y-5 relative z-10">
                                 {[
@@ -306,8 +305,8 @@ const ProductList = () => {
                                     { label: 'AMC Data Sync', status: 'ENCRYPTED' },
                                     { label: 'LTV Verification', status: 'SECURE' }
                                 ].map((row, idx) => (
-                                    <div key={idx} className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-5 group hover:border-[#00AEEF]/30 transition-colors duration-300">
-                                        <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-[#00AEEF] group-hover:bg-[#00AEEF] group-hover:text-white transition-all duration-300">
+                                    <div key={idx} className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-5 group hover:border-[#6B38FB]/30 transition-colors duration-300">
+                                        <div className="w-10 h-10 bg-purple-50 rounded-xl flex items-center justify-center text-[#6B38FB] group-hover:bg-[#6B38FB] group-hover:text-white transition-all duration-300">
                                             <ShieldCheck className="w-5 h-5" />
                                         </div>
                                         <div className="flex-1 space-y-1.5">

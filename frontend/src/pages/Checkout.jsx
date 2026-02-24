@@ -19,17 +19,17 @@ const Checkout = () => {
             <Navbar />
             <div className="flex-1 flex items-center justify-center">
                 <div ref={contentRef} className="max-w-2xl mx-auto px-6 flex flex-col items-center text-center">
-                    <div className="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mb-10 shadow-xl shadow-blue-500/10">
-                        <div className="w-16 h-16 bg-[#00AEEF] rounded-full flex items-center justify-center">
+                    <div className="w-24 h-24 bg-purple-50 rounded-full flex items-center justify-center mb-10 shadow-xl shadow-purple-500/10">
+                        <div className="w-16 h-16 bg-[#6B38FB] rounded-full flex items-center justify-center">
                             <CheckCircle className="w-8 h-8 text-white" />
                         </div>
                     </div>
 
                     <div className="space-y-4 mb-8">
-                        <span className="text-[#00AEEF] font-black uppercase tracking-[0.3em] text-[10px]">Underwriting Sequence Initiated</span>
+                        <span className="text-[#6B38FB] font-black uppercase tracking-[0.3em] text-[10px]">Underwriting Sequence Initiated</span>
                         <h1 className="text-6xl font-black tracking-tighter leading-none">
                             Settlement <br />
-                            <span className="text-[#00AEEF]">Status: Pending.</span>
+                            <span className="text-[#6B38FB]">Status: Pending.</span>
                         </h1>
                     </div>
 
@@ -47,14 +47,14 @@ const Checkout = () => {
                             <span className="text-gray-400">Settlement Status</span>
                             <div className="flex items-center gap-2">
                                 <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-                                <span className="text-[#00AEEF]">Pending</span>
+                                <span className="text-[#6B38FB]">Pending</span>
                             </div>
                         </div>
                     </div>
 
                     <button
                         onClick={() => window.location.href = '/'}
-                        className="mt-16 bg-gray-950 text-white px-12 py-5 rounded-full font-black uppercase tracking-[0.3em] text-[11px] hover:bg-[#00AEEF] hover:scale-105 active:scale-95 transition-all duration-500 shadow-2xl shadow-gray-400/20"
+                        className="mt-16 bg-gray-950 text-white px-12 py-5 rounded-full font-black uppercase tracking-[0.3em] text-[11px] hover:bg-[#6B38FB] hover:scale-105 active:scale-95 transition-all duration-500 shadow-2xl shadow-gray-400/20"
                     >
                         Return to Terminal
                     </button>

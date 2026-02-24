@@ -28,8 +28,8 @@ const ProductCard = ({ product }) => {
 
             <div className="p-6 flex flex-col flex-1 gap-2">
                 <div className="flex flex-col gap-1">
-                    <span className="text-[10px] font-extrabold text-[#00AEEF] uppercase tracking-[0.2em]">{product.variants?.[0]?.color || 'In Stock'}</span>
-                    <h3 className="text-xl font-black text-gray-900 leading-tight group-hover:text-[#00AEEF] transition-colors">{product.name}</h3>
+                    <span className="text-[10px] font-extrabold text-[#6B38FB] uppercase tracking-[0.2em]">{product.variants?.[0]?.color || 'In Stock'}</span>
+                    <h3 className="text-xl font-black text-gray-900 leading-tight group-hover:text-[#6B38FB] transition-colors">{product.name}</h3>
                 </div>
 
                 <div className="mt-auto">
@@ -57,7 +57,7 @@ const ProductCard = ({ product }) => {
                                 )}
                             </div>
                         </div>
-                        <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center group-hover:bg-[#00AEEF] group-hover:text-white group-hover:translate-x-1 transition-all shadow-sm text-gray-400">
+                        <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center group-hover:bg-[#6B38FB] group-hover:text-white group-hover:translate-x-1 transition-all shadow-sm text-gray-400">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                         </div>
                     </div>
