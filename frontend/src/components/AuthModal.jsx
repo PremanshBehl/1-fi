@@ -10,7 +10,7 @@ const AuthModal = ({ isOpen, onClose }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsLoading(true);
-        // Simulate API call
+
         setTimeout(() => {
             setIsLoading(false);
             onClose();
@@ -20,15 +20,15 @@ const AuthModal = ({ isOpen, onClose }) => {
 
     return (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-            {/* Backdrop */}
+            
             <div
                 className="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity"
                 onClick={onClose}
             />
 
-            {/* Modal Content */}
+            
             <div className="bg-white w-full max-w-[440px] rounded-[32px] overflow-hidden relative shadow-[0_25px_100px_rgba(0,0,0,0.15)] transform transition-all">
-                {/* Header Image/Pattern */}
+                
                 <div className="h-32 bg-gradient-to-br from-[#10b1c1] to-[#12c2d6] p-8 flex items-end relative">
                     <button
                         onClick={onClose}
@@ -47,7 +47,7 @@ const AuthModal = ({ isOpen, onClose }) => {
                 </div>
 
                 <div className="p-8">
-                    {/* Switcher */}
+                    
                     <div className="flex bg-[#f4f8fa] p-1.5 rounded-2xl mb-8">
                         <button
                             onClick={() => setIsLogin(true)}
@@ -125,14 +125,14 @@ const AuthModal = ({ isOpen, onClose }) => {
                         </button>
                     </form>
 
-                    {/* Divider */}
+                    
                     <div className="flex items-center gap-4 my-8">
                         <div className="flex-1 h-[1px] bg-gray-100" />
                         <span className="text-[10px] font-black text-gray-300 uppercase tracking-widest">Or continue with</span>
                         <div className="flex-1 h-[1px] bg-gray-100" />
                     </div>
 
-                    {/* Social Auth */}
+                    
                     <div className="grid grid-cols-2 gap-4">
                         <button className="flex items-center justify-center gap-3 py-4 rounded-2xl border-2 border-gray-100 hover:border-gray-200 transition-all active:scale-95 group">
                             <div className="w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-white text-[10px] font-bold">G</div>

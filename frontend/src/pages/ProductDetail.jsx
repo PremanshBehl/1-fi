@@ -60,7 +60,7 @@ const ProductDetail = () => {
             <div className="flex-1 max-w-7xl mx-auto w-full px-6 flex items-start justify-center pt-24 pb-16">
                 <div className="flex flex-col lg:flex-row gap-12 items-start w-full">
 
-                    {/* Left Column - Product Visualization */}
+                    
                     <div className="w-full lg:w-[480px] h-full flex flex-col gap-6 shrink-0">
                         <div className="flex-1 bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm flex flex-col items-center group relative overflow-hidden min-h-0">
                             <div className="absolute top-6 left-6 flex flex-col gap-2 z-10">
@@ -102,7 +102,7 @@ const ProductDetail = () => {
                             </div>
                         </div>
 
-                        {/* Strategic Content */}
+                        
                         <div className="bg-purple-50/50 rounded-[32px] p-6 border border-purple-100/50 shrink-0">
                             <h4 className="text-[10px] font-black text-[#6B38FB] uppercase tracking-[0.2em] mb-2">Protocol Insight</h4>
                             <p className="text-gray-500 text-xs font-medium leading-relaxed">
@@ -111,7 +111,7 @@ const ProductDetail = () => {
                         </div>
                     </div>
 
-                    {/* Right Column - Underwriting & EMI Plans */}
+                    
                     <div className="flex-1 h-full flex flex-col min-w-0">
                         <div className="mb-6 shrink-0">
                             <div className="flex items-center gap-2 mb-3">
@@ -222,6 +222,5 @@ const ProductDetail = () => {
         </div>
     );
 };
-
 
 export default ProductDetail;

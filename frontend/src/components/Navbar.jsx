@@ -13,7 +13,6 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-[100] bg-white/80 backdrop-blur-md border-b border-gray-100 px-6 py-3">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
 
-                {/* Logo Branding & Navigation */}
                 <div className="flex items-center gap-6">
                     <Logo />
 
@@ -30,7 +29,7 @@ const Navbar = () => {
                     )}
                 </div>
 
-                {/* Action Buttons */}
+                
                 <div className="flex items-center gap-4">
                     <button
                         onClick={() => navigate('/')}

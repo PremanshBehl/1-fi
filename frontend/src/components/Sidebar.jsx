@@ -7,7 +7,7 @@ const Sidebar = () => {
             <div>
                 <h3 className="text-lg font-bold mb-6">Filters</h3>
 
-                {/* Downpayment Filter */}
+                
                 <div className="space-y-4 mb-8">
                     <h4 className="text-sm font-bold text-gray-800">Downpayment (Pay Now)</h4>
                     <label className="flex items-center gap-3 cursor-pointer group">
@@ -16,7 +16,7 @@ const Sidebar = () => {
                     </label>
                 </div>
 
-                {/* EMI Tenure Filter */}
+                
                 <div className="space-y-4 mb-8">
                     <h4 className="text-sm font-bold text-gray-800">EMI Tenure</h4>
                     {[2, 4, 6].map(m => (
@@ -27,7 +27,7 @@ const Sidebar = () => {
                     ))}
                 </div>
 
-                {/* Price Filter */}
+                
                 <div className="space-y-4 mb-8">
                     <h4 className="text-sm font-bold text-gray-800">Price</h4>
                     {[
@@ -50,7 +50,7 @@ const Sidebar = () => {
                     </div>
                 </div>
 
-                {/* Categories Filter */}
+                
                 <div className="space-y-4 mb-8">
                     <h4 className="text-sm font-bold text-gray-800">Categories</h4>
                     <label className="flex items-center gap-3 cursor-pointer group">
@@ -59,7 +59,7 @@ const Sidebar = () => {
                     </label>
                 </div>
 
-                {/* Brand Filter */}
+                
                 <div className="space-y-4 mb-8">
                     <div className="flex justify-between items-center">
                         <h4 className="text-sm font-bold text-gray-800 uppercase">Brand</h4>

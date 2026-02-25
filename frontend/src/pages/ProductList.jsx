@@ -73,7 +73,7 @@ const ProductList = () => {
             <CategoryBar activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
 
             <main className="pb-24">
-                {/* Modern Hero Section with Trust Badges */}
+                
                 <div className="relative h-[700px] w-full overflow-hidden bg-[#132130]">
                     <img
                         src="/images/hero.png"
@@ -101,7 +101,7 @@ const ProductList = () => {
                             </div>
                         </div>
 
-                        {/* Trust Badges */}
+                        
                         <div className="flex flex-wrap gap-x-12 gap-y-6 pt-10 border-t border-white/10 reveal" ref={addToRefs}>
                             {[
                                 { label: '0% Interest', sub: 'Institutional Terms', icon: Zap },
@@ -123,7 +123,7 @@ const ProductList = () => {
                     </div>
                 </div>
 
-                {/* Content Section based on Category */}
+                
                 <div
                     ref={(el) => {
                         productGridRef.current = el;
