@@ -33,7 +33,22 @@ const productRoutes = require('./routes/product.routes');
 app.use('/api/products', productRoutes);
 
 app.get('/', (req, res) => {
-    res.send('1Fi EMI App API is running with PostgreSQL & Prisma...');
+    res.json({ message: '1Fi EMI App API is running with PostgreSQL & Prisma.' });
+});
+
+app.get('/health', (req, res) => {
+    const memoryUsage = process.memoryUsage();
+    res.status(200).json({
+        status: 'ok',
+        uptime: `${Math.floor(process.uptime())}s`,
+        environment: process.env.NODE_ENV || 'development',
+        timestamp: new Date().toISOString(),
+        memory: {
+            rss: `${Math.round(memoryUsage.rss / 1024 / 1024)} MB`,
+            heapUsed: `${Math.round(memoryUsage.heapUsed / 1024 / 1024)} MB`,
+            heapTotal: `${Math.round(memoryUsage.heapTotal / 1024 / 1024)} MB`,
+        },
+    });
 });
 
 const server = app.listen(PORT, () => {
